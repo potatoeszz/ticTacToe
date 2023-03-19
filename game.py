@@ -218,6 +218,9 @@ def handleClick(x, y):
     answer = turtle.textinput('Play again?', 'Do you want to play again? (y/n)')
     if answer == 'y':
         reset()
+    else:
+        turtle.bye()
+
 
 def reset():
     global data
