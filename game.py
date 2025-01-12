@@ -198,6 +198,8 @@ def handleClick(x, y):
     if x < -BOARDWIDTH / 2 or x > BOARDWIDTH / 2 or y < -BOARDWIDTH / 2 or y > BOARDWIDTH / 2:
         return
     global cur_player
+
+    # convert x, y to col, row
     col, row = xy2ColRow(x, y)
     
     # if piece already exists, ignore it
